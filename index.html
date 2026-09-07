@@ -1,65 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amanda Fults | Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #352f3f;
+      background-color: #fff9fc;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #6b4c8a;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #f2e6f3;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .initials {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background-color: #c96f96;
+      color: white;
+      font-size: 42px;
+      font-weight: bold;
+      line-height: 120px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #563a73;
+      font-size: 42px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      padding: 35px 0;
+      border-bottom: 1px solid #e1d5e3;
+    }
+
+    h2 {
+      color: #6b4c8a;
+    }
+
+    .skills-list {
+      padding-left: 20px;
+      columns: 2;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    th, td {
+      border: 1px solid #d6c6da;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eadcf0;
+      color: #563a73;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 18px;
+      background-color: #6b4c8a;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #563a73;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: #6b4c8a;
+      color: white;
+      text-align: center;
+    }
+    @media screen and (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 8px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .skills-list {
+        columns: 1;
+      }
+
+      table, thead, tbody, tr, th, td {
+        display: block;
+      }
+
+      th {
+        display: none;
+      }
+
+      td {
+        border-bottom: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #d6c6da;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Amanda Fults</h1>
-  <h2>Information Systems Student</h2>
-  <h2>University of Utah</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <h3>About Me</h3>
-  <p>My major is World Languages and Cultures - Korean emphasis with a minor in Business AI. I'm currently the head of marketing operations at Entrata but I am interested in gaining additional skills toward more general operations positions. I also want to expand my data analysis and visualization skills. I use AI right now (ChatGPT, Gemini, Zapier's AI) to build automations in Zapier as well as to create SQL in DOMO. I am very interested in becoming even more proficient in using AI. As far as technical interests, I would like to learn Python and JavaScript. I would also like to expand my skills in building automation/workflows and database management. I would also like to learn more about networks, cybersecurity, and cloud computing.</p>
+  <header>
+    <div class="initials">AF</div>
+    <h1>Amanda Fults</h1>
+    <p>Information Systems Student | University of Utah</p>
+  </header>
 
-  <h3>Skills</h3>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>SQL</li>
-    <li>Data Analytics - DOMO</li>
-    <li>Marketo - Certified Expert</li>
-    <li>Salesforce - Certified Admin</li>
-    <li>Zapier</li>
-    <li>LeanData - Certified Expert</li>
-    <li>Cvent</li>
-    <li>Qualified</li>
-    <li>Microsoft Excel</li>
-  </ul>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>My major is World Languages and Cultures - Korean emphasis with a minor in Business AI. I am currently the Head of Marketing Operations at Entrata, and I am interested in gaining skills for broader operations positions.</p>
 
-  <table border="1">
-  <thead>
-    <tr>
-      <th>Projects</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>AI Business Analysis</td>
-      <td>Analyze business data using ChatGPT</td>
-    </tr>
-    <tr>
-      <td>Data Visualization</td>
-      <td>Dashboard built with Tableau</td>
-    </tr>
-     <tr>
-      <td>Web Development</td>
-      <td>Responsive Bootstrap website</td>
-    </tr>
-     <tr>
-      <td>Process Improvement</td>
-      <td>AI-assisted business workflow redesign</td>
-    </tr>
-  </tbody>
-</table>
+      <p>I use ChatGPT, Gemini, and Zapier AI to build automations and to write SQL in DOMO for data analysis. I would like to improve my skills in data visualization, Python, JavaScript, workflow automation, and database management. I am also interested in learning more about networks, cybersecurity, and cloud computing.</p>
+    </section>
 
-  <h3>Resume</h3>
-  <p><a href="Amanda Fults Resume 2026.pdf">Amanda Fults Resume</a></p>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>SQL</li>
+        <li>Data Analytics - DOMO</li>
+        <li>Marketo - Certified Expert</li>
+        <li>Salesforce - Certified Admin</li>
+        <li>Zapier</li>
+        <li>LeanData - Certified Expert</li>
+        <li>Cvent</li>
+        <li>Qualified</li>
+        <li>Microsoft Excel</li>
+      </ul>
+    </section>
 
-  <h3>Contact</h3>
-  <p>Email: <a href="mailto:u1646052@utah.edu">u1646052@utah.edu</a></p>
-  <p>LinkedIn Profile: <a href="https://www.linkedin.com/in/amandafults/"></a>linkedin.com/in/amandafults/</p>
-  <p>GitHub: <a href="https://www.github.com/amanda-fults"></a>github.com/amanda-fults</p>
+    <section id="projects">
+      <h2>Projects</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AI Business Analysis</td>
+            <td>Analyzed business data using ChatGPT.</td>
+          </tr>
+          <tr>
+            <td>Data Visualization</td>
+            <td>Built a dashboard with Tableau.</td>
+          </tr>
+          <tr>
+            <td>Web Development</td>
+            <td>Created a responsive Bootstrap website.</td>
+          </tr>
+          <tr>
+            <td>Process Improvement</td>
+            <td>Redesigned a business workflow with help from AI.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>
+        <a class="button" href="Amanda-Fults-Resume-2026.pdf" target="_blank">View My Resume</a>
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:u1646052@utah.edu">u1646052@utah.edu</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/amandafults/" target="_blank">linkedin.com/in/amandafults</a></p>
+      <p>GitHub: <a href="https://github.com/amanda-fults" target="_blank">github.com/amanda-fults</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Amanda Fults</p>
+  </footer>
 </body>
 </html>
