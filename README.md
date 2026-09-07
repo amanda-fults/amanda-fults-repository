@@ -1,4 +1,4 @@
-# amanda-fults-repository-1
+# amanda-fults-repository
 
 
 # My Portfolio
